@@ -45,7 +45,7 @@ tensorlake secrets set EXA_API_KEY "your_exa_api_key"
 
 ### 3. Test Locally
 
-**Option A: Run the agent directly**
+**Option A: Run the agent locallyt **
 ```bash
 python outage_agent.py
 ```
@@ -62,7 +62,7 @@ Then open your browser to `http://localhost:8501`
 tensorlake deploy outage_agent.py
 ```
 
-### 5. Test Remotely
+### 5. Run the agent deployed to Tensorlake Cloud
 
 ```bash
 python test_remote_outage_agent.py
@@ -70,7 +70,7 @@ python test_remote_outage_agent.py
 
 ## Usage
 
-### Local Execution
+### Running locally
 
 ```python
 from tensorlake.applications import run_local_application, Request
@@ -81,7 +81,7 @@ output = request.output()
 print(output)
 ```
 
-### Remote Execution
+### Running on Tensorlake Cloud
 
 ```python
 from tensorlake.applications import run_remote_application
